@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="vanta-bg">
+  <div class="phone">
+    <div class="screen">
+      <div class="textarea-container">
+        <button id="clear" class="operand">C</button>
+        <div class="textarea">
+          <textarea class="fill-textarea" id="display" readonly></textarea>
+        </div>
+      </div>
 
-<div class="textarea-container">
-    <button id="clear" class="operand">C</button>
-    <div class="textarea">
-        <textarea class="fill-textarea" id="display" readonly></textarea>
+      <div class="main-content">
+        <div class="grid-container">
+          <button id="one" class="grid-item">1</button>
+          <button id="two" class="grid-item">2</button>
+          <button id="three" class="grid-item">3</button>
+          <button id="four" class="grid-item">4</button>
+          <button id="five" class="grid-item">5</button>
+          <button id="six" class="grid-item">6</button>
+          <button id="seven" class="grid-item">7</button>
+          <button id="eight" class="grid-item">8</button>
+          <button id="nine" class="grid-item">9</button>
+          <button id="zero" class="grid-item">0</button>
+          <button id="dot" class="grid-item">.</button>
+          <button id="equals" class="grid-item">=</button>
+        </div>
+        <div class="operators">
+          <button id="add" class="operand">+</button>
+          <button id="minus" class="operand">-</button>
+          <button id="multiply" class="operand">*</button>
+          <button id="divide" class="operand">/</button>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+  <script src="vanta-background.js"></script>
+  <script src="calculator.js"></script>
 
-<div class="main-content">
-    <div class="grid-container">
-        <button id="one" class="grid-item">1</button>
-        <button id="two" class="grid-item">2</button>
-        <button id="three" class="grid-item">3</button>
-        <button id="four" class="grid-item">4</button>
-        <button id="five" class="grid-item">5</button>
-        <button id="six" class="grid-item">6</button>
-        <button id="seven" class="grid-item">7</button>
-        <button id="eight" class="grid-item">8</button>
-        <button id="nine" class="grid-item">9</button>
-        <button id="zero" class="grid-item">0</button>
-        <button id="dot" class="grid-item">.</button>
-        <button id="equals" class="grid-item">=</button>
-    </div>
-    <div class="operators">
-        <button id="add" class="operand">+</button>
-        <button id="minus" class="operand">-</button>
-        <button id="multiply" class="operand">*</button>
-        <button id="divide" class="operand">/</button>
-    </div>
-</div>
-
-<script src="calculator.js"></script>
 </body>
 </html>
